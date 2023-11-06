@@ -1,0 +1,217 @@
+body {
+  margin: 0px;
+  background-color: white;
+  }
+  
+  .topo{
+  padding: 5px;
+  background-color: #be2020;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  }
+  
+  
+  .topoPrincipal{
+    display: flex;
+   flex: 1;
+    justify-content: center;
+  }
+  
+  .topoPrincipal img{
+    padding: 2px;
+    display: flex;
+    
+  }
+  
+  #container-doce{
+      display: flex;
+      flex-wrap: wrap;
+  gap: 10px;
+ justify-content: center;
+  }
+  
+  #container-doce .card{
+  padding: 5px;
+  
+border: solid 1px;
+border-color:  black;
+background-color: rgba(216, 11, 124, 5,0);
+margin: 5px;
+background-color: white;
+border-radius: 10px;
+
+
+  }
+  
+
+  #container-doce .card p.textoNome{
+    display: flex;
+  justify-content: center;
+  font-family: helvetica;
+  font-size: 16px;
+    }
+
+    #container-doce .card p.textoDescricao{
+      display: flex;
+    justify-content: center;
+    font-family: helvetica;
+    font-size: 12px;
+      }
+
+      #container-doce .card p.textoPreco{
+        display: flex;
+      justify-content: center;
+      font-family: helvetica;
+      font-size: 18px;
+        }
+
+  #container-doce .card img {
+      width: 200px; 
+      height: 200px; 
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+    }
+  
+   .topo #carrinho{
+  margin-left: auto;
+  
+  }
+
+  .teste {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    display: none;
+  }
+
+  .botaoAdicionar{
+    border-radius: 20px;
+    background-color: #be2020;
+    color: #E6E6FA;
+   border-style: none;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+  #barraCarrinho {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+    
+  }
+  
+  #barraCarrinho.aberto {
+    right: 0;
+    background-color: white;
+  }
+
+
+#carrinho-container{
+  overflow: auto;
+}
+
+  #carrinho-container .carrinho-item{
+    padding: 5px;
+    flex: 1;
+background-color: white; 
+border:solid 1px;
+border-color: black;
+height: 220px;
+width: 250px;
+margin: 5px;
+}
+    
+    #carrinho-container .carrinho-item img {
+        width: 100px; 
+        height: 100x; 
+        
+      }
+
+      .carrinho-info {
+    
+       
+       
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .carrinho-info p {
+       
+        
+        font-family: helvetica;
+        font-size: 16px; 
+      }
+
+     
+      .fa-candy-cane{
+        margin-top: 16px;
+        margin-right: 8px
+      }
+
+      #total-carrinho{
+        font-weight: bold;
+ 
+      }
+
+      
+      #overlay {
+        position: fixed;
+        display: none; 
+        width: 100%; 
+        height: 100%; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); /* Fundo preto com opacidade */
+        z-index: 2; 
+        cursor: pointer; /* precisa mesmo? */
+    }
+    
+    #formulario {
+        position: fixed; 
+        display: none; 
+        width: 300px; 
+        height: auto; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Necessário para centralizar corretamente */
+        z-index: 3; /* Aparecer em cima do overlay */
+        
+        color: white;
+        background-color: black;
+    border: 1px solid pink; 
+    border-radius: 0.25rem; 
+    padding: 1rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    #botaoAdicionarProduto {
+      border-radius: 10px;
+      border-color: pink;
+     background-color: black;
+     color: white;
+    }
+
+    .divAdicionar{
+      background-color: #be2020;
+width: auto;    
+padding: 5px;
+margin-bottom: 5px;
+}
+
+#fecharFormulario{
+margin-top: 0px;
+}

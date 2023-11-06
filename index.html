@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body >
+        
+    <header class = "topo">
+        <div class = "topoPrincipal">
+            
+            <i class="fa-solid fa-candy-cane"></i>
+            <p>MarMelo's Doces</p>
+        </div>  
+        <button id="botaoAdicionarProduto">Adicionar Produto</button>
+        <i class="fa-solid fa-cart-shopping" style="color: #000000;" id = "carrinho"></i>
+    </header>
+
+    <div id="barraCarrinho">
+        <div id="fecharCarrinho"><i class="fa-regular fa-circle-xmark"></i></div>
+        <div id = "carrinho-container"></div>
+        
+<div id="total-carrinho">Total: R$0.00</div> <div><button>Finalizar compra</button></div>
+    
+      </div>
+
+
+      
+
+    <div id="overlay" style="display: none;"></div>
+
+
+    <section id = "container-doce" ></section>
+    <script type ="module" src="./script.js"></script>
+    <form id="formulario" style="display: none;">
+        <p id = "fecharFormulario"><i class="fa-regular fa-circle-xmark"></i>
+        </p>
+        <div class = "divAdicionar"><p>Adicionando Produto</p></div>
+        <input type="text" id="nome" placeholder="Nome do doce">
+        <input type="number"  step="0.01" id="preço" placeholder="Preço do doce">
+        <input type="text" id="descrição" placeholder="Descrição do doce">
+        <input type="text" id="imagem" placeholder="URL da imagem do doce">
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+
+</body>
+</html>
